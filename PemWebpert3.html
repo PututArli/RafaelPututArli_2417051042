@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum Pertemuan 3</title>
+</head>
+<body>
+
+    <header style="background-color: aliceblue; border-bottom: 1px solid #ddd;"> 
+        <h2>Praktikum Web</h2>
+        <nav>
+            <a href="Prak2Web.html">Home</a>
+            <a href="#section1">Artikel</a>
+            <a href="#section2">Formulir</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section id="section1" style="background-color: aqua; min-height: 100vh;">
+        <article>   
+            <h3>Deskripsi Artikel</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Repudiandae nobis error facilis similique, unde quam consequatur? 
+                Recusandae exercitationem iusto ipsum laboriosam quibusdam!
+            </p>
+        </article>
+
+        <aside> 
+            <details>
+                <summary>Klik untuk detail (Program Studi)</summary>
+                <ul>   
+                    <li>Ilmu Komputer</li>
+                    <li>Sistem Informasi</li>
+                </ul>
+            </details>
+        </aside>
+    </section>
+
+    <section id="section2" style="background-color: azure; min-height: 100vh;"> 
+        <h3>Formulir Data Mahasiswa</h3>
+        
+        <form action="#" method="get" target="_blank">
+            <label for="username">Nama:</label><br>
+            <input type="text" id="username" name="Username" required>
+            <br><br>
+
+            <label for="npm">NPM:</label><br>
+            <input type="text" id="npm" name="npm">
+            <br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" placeholder="contoh@mail.com">
+            <br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" id="password">
+            <br><br>
+
+            <label>Jenis Kelamin:</label><br>
+            <input type="radio" name="jk" id="lk" value="Laki-laki">
+            <label for="lk">Laki-laki</label>
+            <input type="radio" name="jk" id="pr" value="Perempuan">
+            <label for="pr">Perempuan</label>
+            <br><br>
+
+            <label>Hobi:</label><br>
+            <input type="checkbox" name="hobi[]" id="game" value="Game">
+            <label for="game">Game</label><br>
+            <input type="checkbox" name="hobi[]" id="menulis" value="Menulis">
+            <label for="menulis">Menulis</label>
+            <br><br>
+
+            <label for="upload">Upload File:</label><br>
+            <input type="file" name="upload" id="upload">
+            <br><br>
+
+            <label for="tanggal">Tanggal:</label>
+            <input type="date" name="tanggal" id="tanggal">
+            
+            <label for="waktu">Waktu:</label>
+            <input type="time" name="waktu" id="waktu">
+            <br><br>
+
+            <input type="hidden" name="role" value="Mahasiswa">
+            <input type="hidden" name="jurusan" value="Ilmu Komputer">
+
+            <label for="search">Cari Data:</label>
+            <input type="search" id="search" name="search" placeholder="Cari...">
+            <br><br>
+
+            <button type="submit" style="padding: 5px 20px; cursor: pointer;">Kirim Data</button>
+        </form>
+    </section>
+
+</body>
+</html>
